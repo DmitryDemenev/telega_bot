@@ -6,11 +6,6 @@ bot.on('message' , msg => {
     const chatId = msg.chat.id
     if (msg.new_chat_participant) {
         bot.sendMessage(chatId, `Привет, ${author}, Добро пожаловать`,{
-            // reply_markup:{
-            //     inline_keyboard: [
-            //         [{text: "Принять", web_app: {url:'https://t.me/+Y3RGKN24XIRkMWMy'}}],
-            //     ]
-            // }
         }
         )           
     }
